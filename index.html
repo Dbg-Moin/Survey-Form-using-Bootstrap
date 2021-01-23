@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <form class=" site-section main-form container bg-light" action="">
+
+        <div class="p-3 p-lg-5 border">
+            <h1 class="text-secondary col-lg-12 text-center mb-5">Survey Form</h1>
+
+
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_fname" name="c_fname">
+                </div>
+                <div class="col-md-6">
+                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_lname" name="c_lname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-12">
+                    <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="sel1">Select list:</label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="sel1" class="text-black">Select date: <span class="text-danger">*</span></label>
+                    <input type="date" class="form-control col-sm-4" id="date" placeholder="" name="date">
+                </div>
+            </div>
+
+            <div class="form-check-inline">
+                <div class="mr-5">
+                    <label for="" class="text-black">Check:<span class="text-danger">*</span></label>
+                </div>
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                  </div>
+                  
+                
+            </div>
+
+
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Example file input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
